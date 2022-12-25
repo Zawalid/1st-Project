@@ -1,6 +1,6 @@
 :root {
   --blue-color: #0075ff;
-  --green-alt-color: #f0b70d;
+  --green-alt-color: #FFBC2A;
   --orange-color: #f0b70d;
   --green-color: #f38160;
   --red-color: #f44336;
@@ -17,9 +17,6 @@
 }
 .align-center {
   align-items: center;
-}
-.space-between {
-  justify-content: space-between;
 }
 .d-grid {
   display: grid;
