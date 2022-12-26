@@ -345,7 +345,7 @@ header nav ul li a::before {
     text-align: center;
   }
   .landing .container .content h1 {
-    font-size: 70px;
+    font-size: 52px;
   }
   .landing .container img {
     display: none;
@@ -783,9 +783,12 @@ header nav ul li a::before {
   width: 50px;
   cursor: pointer;
 }
+.content .head .icons i {
+  font-size: 18px;
+}
 .content .head .icons .profile {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   padding-top: 2px;
 }
 .content .head .icons .notification::before {
