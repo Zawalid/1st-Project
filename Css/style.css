@@ -709,7 +709,9 @@ header nav ul li a::before {
 }
 .page .sidebar {
   width: 230px;
-  position: relative;
+  height: 100%;
+  position: sticky;
+  top: 0;
   background-color: var(--section-background);
 }
 .hide-sidebar {
@@ -817,7 +819,31 @@ header nav ul li a::before {
 /* Products */
 .content .category .title {
   margin: 0 0 20px;
-  border-bottom: 1px solid black;
+  border-bottom: 1.5px solid black;
+  position: relative;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.content .category .title::before,
+.content .category .title::after {
+position: absolute;
+content: "";
+width: 20px;
+height: 1px;
+background-color: black;
+bottom: 8px;
+}
+.content .category .title::before {
+    left: -14px;
+    transform: rotate(-116deg);
+}
+.content .category .title::after {
+  right: -14px;
+    transform: rotate(116deg);
+
 }
 .content .category .title img {
   width: 40px;
