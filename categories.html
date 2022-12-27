@@ -85,7 +85,9 @@
       <div class="content">
         <!--? Start Head -->
         <div class="head bg-white p-15 between-flex">
-          <i class="fa-solid fa-arrow-right toggle-sidebar hide-not-mobile"></i>
+          <i
+            class="fa-solid fa-right-from-bracket toggle-sidebar hide-not-mobile"
+          ></i>
           <div class="search p-relative">
             <input class="p-10" type="search" placeholder="Type A Product" />
           </div>
@@ -101,12 +103,12 @@
         <!--? End Head -->
         <!-- ? Start Categories -->
         <div class="category p-20" id="Bakery">
-          <h2 class="title d-flex align-center gap-10 w-fit p-10 rad-10">
+          <h2 class="title d-flex align-center gap-10 w-fit">
             <img src="Images/icons8-pie-100.png" alt="" />
             <span>Bread & Bakery</span>
           </h2>
-          <div class="products d-flex gap-20">
-            <div class="product bg-white rad-10 p-15">
+          <div class="products d-flex gap-20 product-slider">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -135,7 +137,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -164,7 +166,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -193,7 +195,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -222,7 +224,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -251,7 +253,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -280,7 +282,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -309,7 +311,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -338,7 +340,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -367,7 +369,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -396,15 +398,23 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
+          </div>
+          <div class="arrows between-flex mt-15 c-white">
+            <span class=" arrow left center-flex rad-half">
+              <i class="fa-solid fa-chevron-left"></i>
+            </span>
+          <span class="arrow right center-flex rad-half">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
           </div>
         </div>
         <div class="category p-20" id="Dairy">
-          <h2 class="title d-flex align-center gap-10 w-fit p-10 rad-10">
+          <h2 class="title d-flex align-center gap-10 w-fit">
             <img src="Images/icons8-dairy-products-68.png" alt="" />
-            <span>Dairy & Baking Products</span>
+            <span>Dairy Products</span>
           </h2>
-          <div class="products d-flex gap-20">
-            <div class="product bg-white rad-10 p-15">
+          <div class="products d-flex gap-20 product-slider">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -433,7 +443,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -462,7 +472,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -491,7 +501,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -520,7 +530,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -549,7 +559,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -578,7 +588,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -607,7 +617,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -636,7 +646,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -665,7 +675,7 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
-            <div class="product bg-white rad-10 p-15">
+            <div class="product bg-white rad-10 p-15 slide">
               <img src="Images/tomato-preview.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
@@ -695,17 +705,25 @@
               </span>
             </div>
           </div>
+          <div class="arrows between-flex mt-15 c-white">
+            <span class=" arrow left center-flex rad-half">
+              <i class="fa-solid fa-chevron-left"></i>
+            </span>
+          <span class="arrow right center-flex rad-half">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+          </div>
         </div>
         <div class="category p-20" id="Fruits">
-          <h2 class="title d-flex align-center gap-10 w-fit p-10 rad-10">
+          <h2 class="title d-flex align-center gap-10 w-fit">
             <img src="Images/icons8-fruits-60.png" alt="" />
             <span>Fruits</span>
           </h2>
           <div class="products d-flex gap-20">
             <div class="product bg-white rad-10 p-15">
-              <img src="Images/tomato-preview.png" alt="" />
+              <img src="Images/bananas.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
-              <p class="m-0 fs-14">Tomatoes</p>
+              <p class="m-0 fs-14">Bananas</p>
               <span class="fs-13 c-paragraph">By weight, 1$/kg</span>
               <div class="quantity-container d-flex align-center w-fit">
                 <button
@@ -732,9 +750,9 @@
               </span>
             </div>
             <div class="product bg-white rad-10 p-15">
-              <img src="Images/tomato-preview.png" alt="" />
+              <img src="Images/apple.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
-              <p class="m-0 fs-14">Tomatoes</p>
+              <p class="m-0 fs-14">Apples</p>
               <span class="fs-13 c-paragraph">By weight, 1$/kg</span>
               <div class="quantity-container d-flex align-center w-fit">
                 <button
@@ -761,9 +779,9 @@
               </span>
             </div>
             <div class="product bg-white rad-10 p-15">
-              <img src="Images/tomato-preview.png" alt="" />
+              <img src="Images/grapes.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
-              <p class="m-0 fs-14">Tomatoes</p>
+              <p class="m-0 fs-14">Grapes</p>
               <span class="fs-13 c-paragraph">By weight, 1$/kg</span>
               <div class="quantity-container d-flex align-center w-fit">
                 <button
@@ -790,9 +808,9 @@
               </span>
             </div>
             <div class="product bg-white rad-10 p-15">
-              <img src="Images/tomato-preview.png" alt="" />
+              <img src="Images/oranges.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
-              <p class="m-0 fs-14">Tomatoes</p>
+              <p class="m-0 fs-14">Oranges</p>
               <span class="fs-13 c-paragraph">By weight, 1$/kg</span>
               <div class="quantity-container d-flex align-center w-fit">
                 <button
@@ -819,9 +837,9 @@
               </span>
             </div>
             <div class="product bg-white rad-10 p-15">
-              <img src="Images/tomato-preview.png" alt="" />
+              <img src="Images/strawberries.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
-              <p class="m-0 fs-14">Tomatoes</p>
+              <p class="m-0 fs-14">Strawberries</p>
               <span class="fs-13 c-paragraph">By weight, 1$/kg</span>
               <div class="quantity-container d-flex align-center w-fit">
                 <button
@@ -848,9 +866,9 @@
               </span>
             </div>
             <div class="product bg-white rad-10 p-15">
-              <img src="Images/tomato-preview.png" alt="" />
+              <img src="Images/avocado.png" alt="" class="avocado"/>
               <h2 class="m-0 c-green fs-25">$1</h2>
-              <p class="m-0 fs-14">Tomatoes</p>
+              <p class="m-0 fs-14">Avocado</p>
               <span class="fs-13 c-paragraph">By weight, 1$/kg</span>
               <div class="quantity-container d-flex align-center w-fit">
                 <button
@@ -877,9 +895,9 @@
               </span>
             </div>
             <div class="product bg-white rad-10 p-15">
-              <img src="Images/tomato-preview.png" alt="" />
+              <img src="Images/peaches.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
-              <p class="m-0 fs-14">Tomatoes</p>
+              <p class="m-0 fs-14">Peaches</p>
               <span class="fs-13 c-paragraph">By weight, 1$/kg</span>
               <div class="quantity-container d-flex align-center w-fit">
                 <button
@@ -906,9 +924,9 @@
               </span>
             </div>
             <div class="product bg-white rad-10 p-15">
-              <img src="Images/tomato-preview.png" alt="" />
+              <img src="Images/pineapple.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
-              <p class="m-0 fs-14">Tomatoes</p>
+              <p class="m-0 fs-14">Pineapple</p>
               <span class="fs-13 c-paragraph">By weight, 1$/kg</span>
               <div class="quantity-container d-flex align-center w-fit">
                 <button
@@ -935,9 +953,9 @@
               </span>
             </div>
             <div class="product bg-white rad-10 p-15">
-              <img src="Images/tomato-preview.png" alt="" />
+              <img src="Images/pears.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
-              <p class="m-0 fs-14">Tomatoes</p>
+              <p class="m-0 fs-14">Pears</p>
               <span class="fs-13 c-paragraph">By weight, 1$/kg</span>
               <div class="quantity-container d-flex align-center w-fit">
                 <button
@@ -964,9 +982,9 @@
               </span>
             </div>
             <div class="product bg-white rad-10 p-15">
-              <img src="Images/tomato-preview.png" alt="" />
+              <img src="Images/watermelon.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
-              <p class="m-0 fs-14">Tomatoes</p>
+              <p class="m-0 fs-14">Watermelon</p>
               <span class="fs-13 c-paragraph">By weight, 1$/kg</span>
               <div class="quantity-container d-flex align-center w-fit">
                 <button
@@ -993,15 +1011,23 @@
               </span>
             </div>
           </div>
+          <div class="arrows between-flex mt-15 c-white">
+            <span class=" arrow left center-flex rad-half">
+              <i class="fa-solid fa-chevron-left"></i>
+            </span>
+          <span class="arrow right center-flex rad-half">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+          </div>
         </div>
         <div class="category p-20" id="Vegetables">
-          <h2 class="title d-flex align-center gap-10 w-fit p-10 rad-10">
+          <h2 class="title d-flex align-center gap-10 w-fit">
             <img src="Images/icons8-vegetables-64.png" alt="" />
             <span>Vegetables</span>
           </h2>
           <div class="products d-flex gap-20">
             <div class="product bg-white rad-10 p-15">
-              <img src="Images/tomato-preview.png" alt="" />
+              <img src="Images/tomatoes.png" alt="" />
               <h2 class="m-0 c-green fs-25">$1</h2>
               <p class="m-0 fs-14">Tomatoes</p>
               <span class="fs-13 c-paragraph">By weight, 1$/kg</span>
@@ -1291,9 +1317,17 @@
               </span>
             </div>
           </div>
+          <div class="arrows between-flex mt-15 c-white">
+            <span class=" arrow left center-flex rad-half">
+              <i class="fa-solid fa-chevron-left"></i>
+            </span>
+          <span class="arrow right center-flex rad-half">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+          </div>
         </div>
         <div class="category p-20" id="Meat">
-          <h2 class="title d-flex align-center gap-10 w-fit p-10 rad-10">
+          <h2 class="title d-flex align-center gap-10 w-fit">
             <img src="Images/icons8-meat-64.png" alt="" />
             <span>Meat</span>
           </h2>
@@ -1589,9 +1623,17 @@
               </span>
             </div>
           </div>
+          <div class="arrows between-flex mt-15 c-white">
+            <span class=" arrow left center-flex rad-half">
+              <i class="fa-solid fa-chevron-left"></i>
+            </span>
+          <span class="arrow right center-flex rad-half">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+          </div>
         </div>
         <div class="category p-20" id="Shellfish">
-          <h2 class="title d-flex align-center gap-10 w-fit p-10 rad-10">
+          <h2 class="title d-flex align-center gap-10 w-fit">
             <img src="Images/icons8-shrimp-64.png" alt="" />
             <span>Shellfish</span>
           </h2>
@@ -1887,9 +1929,17 @@
               </span>
             </div>
           </div>
+          <div class="arrows between-flex mt-15 c-white">
+            <span class=" arrow left center-flex rad-half">
+              <i class="fa-solid fa-chevron-left"></i>
+            </span>
+          <span class="arrow right center-flex rad-half">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+          </div>
         </div>
         <div class="category p-20" id="Spices">
-          <h2 class="title d-flex align-center gap-10 w-fit p-10 rad-10">
+          <h2 class="title d-flex align-center gap-10 w-fit">
             <img src="Images/icons8-spices-64.png" alt="" />
             <span>Condiments & Spices</span>
           </h2>
@@ -2185,9 +2235,17 @@
               </span>
             </div>
           </div>
+          <div class="arrows between-flex mt-15 c-white">
+            <span class=" arrow left center-flex rad-half">
+              <i class="fa-solid fa-chevron-left"></i>
+            </span>
+          <span class="arrow right center-flex rad-half">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+          </div>
         </div>
         <div class="category p-20" id="Sauces">
-          <h2 class="title d-flex align-center gap-10 w-fit p-10 rad-10">
+          <h2 class="title d-flex align-center gap-10 w-fit">
             <img src="Images/icons8-sauce-bottle-64.png" alt="" />
             <span>Sauces & Oils </span>
           </h2>
@@ -2483,9 +2541,17 @@
               </span>
             </div>
           </div>
+          <div class="arrows between-flex mt-15 c-white">
+            <span class=" arrow left center-flex rad-half">
+              <i class="fa-solid fa-chevron-left"></i>
+            </span>
+          <span class="arrow right center-flex rad-half">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+          </div>
         </div>
         <div class="category p-20" id="Snacks">
-          <h2 class="title d-flex align-center gap-10 w-fit p-10 rad-10">
+          <h2 class="title d-flex align-center gap-10 w-fit">
             <img src="Images/icons8-snacks-64.png" alt="" />
             <span>Snacks</span>
           </h2>
@@ -2781,9 +2847,17 @@
               </span>
             </div>
           </div>
+          <div class="arrows between-flex mt-15 c-white">
+            <span class=" arrow left center-flex rad-half">
+              <i class="fa-solid fa-chevron-left"></i>
+            </span>
+          <span class="arrow right center-flex rad-half">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+          </div>
         </div>
         <div class="category p-20" id="Beverages">
-          <h2 class="title d-flex align-center gap-10 w-fit p-10 rad-10">
+          <h2 class="title d-flex align-center gap-10 w-fit">
             <img src="Images/icons8-cola-96.png" alt="" />
             <span>Beverages</span>
           </h2>
@@ -3078,6 +3152,14 @@
                 <i class="fa-solid fa-cart-plus c-white"></i>
               </span>
             </div>
+          </div>
+          <div class="arrows between-flex mt-15 c-white">
+            <span class=" arrow left center-flex rad-half">
+              <i class="fa-solid fa-chevron-left"></i>
+            </span>
+          <span class="arrow right center-flex rad-half">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
           </div>
         </div>
 
