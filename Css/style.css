@@ -709,7 +709,7 @@ header nav ul li a::before {
 }
 .page .sidebar {
   width: 230px;
-  height: 100%;
+  height: 100vh;
   position: sticky;
   top: 0;
   background-color: var(--section-background);
@@ -866,10 +866,6 @@ header nav ul li a::before {
   height: 120px;
   margin-bottom: 15px;
   transform: scale(1.6);
-}
-.avocado {
-  width: 100px !important;
-  margin-left: 24px;
 }
 .content .products .product .add-to-cart {
   margin: 15px auto 5px;
