@@ -1134,7 +1134,7 @@ footer .copyright {
 /* End Animations */
 
 .form-page {
-  display: none;
+  /* display: none; */
   position: fixed;
   z-index: 10;
   left: 50%;
@@ -1142,7 +1142,6 @@ footer .copyright {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
   transition: display 2s ease-in-out;
   -webkit-transition: display 2s ease-in-out;
@@ -1171,6 +1170,8 @@ footer .copyright {
 .form-page .content .form {
   padding: 20px 50px;
   flex-basis: 45%;
+  justify-content: center;
+  flex-direction: column;
 }
 .form-page .content .form form {
   margin-top: 30px;
@@ -1224,4 +1225,27 @@ footer .copyright {
   height: 100%;
   aspect-ratio: 3/2;
     object-fit: cover;
+}
+@media (max-width: 767px) {
+  .form-page .close {
+    left: 90%;
+    color: black;
+    z-index: 2;
+  }
+  .form-page .content {
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .form-page .content .form {
+    padding: 20px;
+  }
+  .form-page .content .form h1 {
+    margin: 0;
+  }
+  .form-page .content .image {
+    flex: 1;
+  }
+ 
 }
