@@ -13,7 +13,7 @@ quantityContainers.forEach((container) => {
     if (newQuantity < minQuantity) {
       newQuantity = minQuantity;
     }
-    quantityInput.value = `${newQuantity} kg`;
+    quantityInput.value = `${newQuantity}`;
   });
 
   incrementButton.addEventListener("click", () => {
@@ -21,7 +21,7 @@ quantityContainers.forEach((container) => {
     if (newQuantity > maxQuantity) {
       newQuantity = maxQuantity;
     }
-    quantityInput.value = `${newQuantity} kg`;
+    quantityInput.value = `${newQuantity}`;
   });
 });
 
