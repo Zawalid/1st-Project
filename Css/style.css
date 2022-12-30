@@ -746,6 +746,7 @@ header .form a {
   opacity: 0;
 }
 .contact .form button {
+  background-color: #19191954;
   cursor: pointer;
   transition: var(--main-transition);
   -webkit-transition: var(--main-transition);
@@ -982,8 +983,8 @@ footer .copyright {
 .content .products .product .add-to-cart:hover {
   opacity: 0.9;
 }
-.content .products .product input[type="number"]::-webkit-inner-spin-button,
-.content .products .product input[type="number"]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   appearance: none;
 }
 .content .products .product .quantity-container {
@@ -1132,9 +1133,10 @@ footer .copyright {
   }
 }
 /* End Animations */
-
-.form-page {
-  /* display: none; */
+/* ============================================= */
+/* Start Form */
+.form-page-signup,
+.form-page-signin {
   visibility: hidden;
   position: fixed;
   z-index: 10;
@@ -1144,11 +1146,6 @@ footer .copyright {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  transition: display 2s ease-in-out;
-  -webkit-transition: display 2s ease-in-out;
-  -moz-transition: display 2s ease-in-out;
-  -ms-transition: display 2s ease-in-out;
-  -o-transition: display 2s ease-in-out;
 }
 .open {
   visibility: visible;
@@ -1156,19 +1153,22 @@ footer .copyright {
   filter: alpha(opacity=1);
   -webkit-filter: alpha(opacity=1);
 }
-.form-page .close {
+
+.form-page-signup .close,
+.form-page-signin .close {
   position: absolute;
-  top: 10px;
-  left: 20px;
+  top: 15px;
+  right: 20px;
   font-size: 30px;
   color: white;
   transition: var(--main-transition);
   cursor: pointer;
 }
-.form-page .close:hover {
+.form-page-signin .close:hover {
   color: black;
 }
-.form-page .content {
+.form-page-signup .content,
+.form-page-signin .content {
   width: 80%;
   height: 94%;
   background-color: white;
@@ -1184,26 +1184,34 @@ footer .copyright {
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
 }
-.form-page.open .content {
+.form-page-signup.open .content,
+.form-page-signin.open .content {
   opacity: 1;
   filter: alpha(opacity=100);
-  -ms-transform: scale(1); 
+  -ms-transform: scale(1);
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-.form-page .content .form {
+.form-page-signup .content .form,
+.form-page-signin .content .form {
   padding: 20px 50px;
   flex-basis: 45%;
   justify-content: center;
   flex-direction: column;
 }
-.form-page .content .form form {
+.form-page-signup .content .form {
+  flex-basis: 65%;
+}
+.form-page-signup .content .form form,
+.form-page-signin .content .form form {
   margin-top: 30px;
 }
-.form-page .content .form input:not([type="submit"]) {
+.form-page-signup .content .form input:not([type="submit"]),
+.form-page-signin .content .form input:not([type="submit"]) {
   width: 100%;
 }
-.form-page .content .form input[type="submit"] {
+.form-page-signup .content .form input[type="submit"],
+.form-page-signin .content .form input[type="submit"] {
   padding: 13px 35px;
   background-color: #19ce19;
   color: white;
@@ -1212,19 +1220,20 @@ footer .copyright {
   transition: var(--main-transition);
   margin-bottom: 25px;
 }
-.form-page .content .form input[type="submit"]:hover {
+.form-page-signup .content .form input[type="submit"]:hover,
+.form-page-signin .content .form input[type="submit"]:hover {
   opacity: 0.8;
 }
-.form-page .content .form .toggle-checkbox {
+.form-page-signin .content .form .toggle-checkbox {
   width: 0 !important;
 }
-.form-page .content .form .toggle-switch {
+.form-page-signin .content .form .toggle-switch {
   width: 17px;
   height: 17px;
   background-color: #ccc;
   margin-right: 5px;
 }
-.form-page .content .form .toggle-switch::before {
+.form-page-signin .content .form .toggle-switch::before {
   font-family: var(--fa-style-family-classic);
   font-weight: 900;
   position: absolute;
@@ -1239,11 +1248,14 @@ footer .copyright {
 .toggle-checkbox:checked + .toggle-switch::before {
   content: "\f00c";
 }
-.form-page .content .sign-up a {
+.form-page-signup .content .sign-up a,
+.form-page-signin .content .sign-up a {
   color: #19ce19;
   font-weight: bold;
+  cursor: pointer;
 }
-.form-page .content img {
+.form-page-signup .content img,
+.form-page-signin .content img {
   max-width: 100%;
   width: 800px;
   height: 100%;
@@ -1251,23 +1263,23 @@ footer .copyright {
   object-fit: cover;
 }
 @media (max-width: 767px) {
-  .form-page .close {
-    left: 90%;
+  .form-page-signin .close1 {
     z-index: 2;
   }
-  .form-page .content {
+  .form-page-signup .content ,
+  .form-page-signin .content {
     flex-direction: column-reverse;
     height: 100%;
     width: 100%;
     margin: 0;
   }
-  .form-page .content .form {
+  .form-page-signup .content .form ,
+  .form-page-signin .content .form {
     padding: 20px;
   }
-  .form-page .content .form h1 {
-    margin: 0;
-  }
-  .form-page .content .image {
+  .form-page-signup .content .image ,
+  .form-page-signin .content .image {
     flex: 1;
   }
 }
+/* End Form */

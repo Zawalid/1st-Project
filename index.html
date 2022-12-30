@@ -72,57 +72,158 @@
               >
             </li>
             <div class="form-mobile d-flex">
-              <a href="#" id="myBtn" class="sign-in btn-shape bg-green-alt c-white"
+              <a
+                href="#"
+                id="signinBtn"
+                class="sign-in btn-shape bg-green-alt c-white"
                 >Sign In</a
               >
-              <a href="#" id="myBtn" class="sign-up btn-shape bg-green c-white">Sign Up</a>
+              <a
+                href="#"
+                id="signupBtn"
+                class="sign-up btn-shape bg-green c-white"
+                >Sign Up</a
+              >
             </div>
           </ul>
         </nav>
         <div class="form between-flex gap-20">
-          <a id="myBtn" class="sign-in btn-shape bg-green-alt c-white"
+          <a id="signinBtn" class="sign-in btn-shape bg-green-alt c-white"
             >Sign In</a
           >
-          <a id="myBtn" class="sign-up btn-shape bg-green c-white">Sign Up</a>
+          <a id="signupBtn" class="sign-up btn-shape bg-green c-white"
+            >Sign Up</a
+          >
         </div>
       </div>
     </header>
     <!-- ? End header -->
-    <div id="form-page" class="form-page">
-      <i class="fa-solid fa-xmark close"></i>
+    <!-- ? Start Form -->
+    <div id="form-page-signin" class="form-page-signin">
+      <i class="fa-solid fa-xmark close" id="clsignin"></i>
       <div id="content" class="content d-flex p-relative">
         <div class="form d-flex">
           <h1>Store</h1>
           <h2 class="mb-10">Welcome Back</h2>
-          <span class="fs-15 c-paragraph">Sign in with your email address and Password.</span>
+          <span class="fs-15 c-paragraph"
+            >Sign in with your email address and Password.</span
+          >
           <form action="">
-            <label ><span class="fs-13 c-paragraph">Email Address</span>
-              <input class="p-10 d-block mb-15 mt-5 border-ccc" type="email">
+            <label
+              ><span class="fs-13 c-paragraph">Email Address</span>
+              <input
+                class="p-10 d-block mb-15 mt-5 border-ccc"
+                type="email"
+                required
+              />
             </label>
-            <label ><span class="fs-13 c-paragraph">Password</span>
-              <input class="p-10 d-block mb-20 mt-5 border-ccc" type="password">
+            <label
+              ><span class="fs-13 c-paragraph">Password</span>
+              <input
+                class="p-10 d-block mb-20 mt-5 border-ccc"
+                type="password"
+                required
+              />
             </label>
-           <div class="options between-flex mb-25">
-            <label class="d-flex align-center">
-              <input type="checkbox" class="toggle-checkbox p-absolute" />
-              <div class="toggle-switch rad-10 p-relative">
-              </div>
-              <span class="fs-14 fw-bold">Remember Me</span>
-            </label>
-            <span class="fs-13 c-paragraph">Forgot Password ?</span>
-           </div>
-           <input type="submit" value="Sign In">
-           <div class="sign-up">
-            <span class="fs-13 c-paragraph">Don't Have An Account ? <a href="">Sign Up</a></span>
-           </div>
+            <div class="options between-flex mb-25">
+              <label class="d-flex align-center">
+                <input type="checkbox" class="toggle-checkbox p-absolute" />
+                <div class="toggle-switch rad-10 p-relative"></div>
+                <span class="fs-14 fw-bold">Remember Me</span>
+              </label>
+              <a href="" class="fs-13 c-paragraph">Forgot Password ?</a>
+            </div>
+            <input type="submit" value="Sign In" />
+            <div class="sign-up">
+              <span class="fs-13 c-paragraph"
+                >Don't Have An Account ? <a id="swapsin">Sign Up</a></span
+              >
+            </div>
           </form>
         </div>
         <div class="image">
-          <img src="Images/form.jpg" alt="">
+          <img src="Images/form.jpg" alt="" />
         </div>
       </div>
     </div>
-
+    <div id="form-page-signup" class="form-page-signup">
+      <i class="fa-solid fa-xmark close" id="clsignup"></i>
+      <div id="content" class="content d-flex p-relative">
+        <div class="form d-flex">
+          <h1 class="m-0 mt-10">Store</h1>
+          <h2 class="mb-10">Sign Up</h2>
+          <span class="fs-15 c-paragraph"
+            >And enjoy life during the time you just saved.</span
+          >
+          <form action="">
+            <div class="name d-flex gap-20">
+              <label
+                ><span class="fs-13 c-paragraph">First Name</span>
+                <input
+                  class="p-10 d-block mb-15 mt-5 border-ccc"
+                  type="text"
+                  required
+                />
+              </label>
+              <label
+                ><span class="fs-13 c-paragraph">Last Name</span>
+                <input
+                  class="p-10 d-block mb-20 mt-5 border-ccc"
+                  type="txt"
+                  required
+                />
+              </label>
+            </div>
+            <div class="email-ph d-flex gap-20">
+              <label
+                ><span class="fs-13 c-paragraph">Phone Number</span>
+                <input
+                  class="p-10 d-block mb-15 mt-5 border-ccc"
+                  type="number"
+                  required
+                />
+              </label>
+              <label
+                ><span class="fs-13 c-paragraph">Email Address</span>
+                <input
+                  class="p-10 d-block mb-20 mt-5 border-ccc"
+                  type="email"
+                  required
+                />
+              </label>
+            </div>
+            <div class="password d-flex gap-20">
+              <label
+                ><span class="fs-13 c-paragraph">Password</span>
+                <input
+                  class="p-10 d-block mb-15 mt-5 border-ccc"
+                  type="password"
+                  required
+                />
+              </label>
+              <label
+                ><span class="fs-13 c-paragraph">Confirm Password</span>
+                <input
+                  class="p-10 d-block mb-20 mt-5 border-ccc"
+                  type="password"
+                  required
+                />
+              </label>
+            </div>
+            <input type="submit" value="Sign Up" />
+            <div class="sign-up">
+              <span class="fs-13 c-paragraph"
+                >Already Have An Account ? <a id="swapsup">Sign In</a></span
+              >
+            </div>
+          </form>
+        </div>
+        <div class="image">
+          <img src="Images/form.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- ? End Form -->
     <!-- ? Start Landing -->
     <div class="landing pt-20 d-flex align-center">
       <div class="container d-flex align-center gap-10">
@@ -164,7 +265,7 @@
             </div>
           </div>
           <a
-            href="#cat"
+            href="categories.html"
             class="shop-now btn-shape c-white fw-bold bg-green-alt d-block"
             >Shop Now</a
           >
@@ -551,7 +652,7 @@
               placeholder="Enter your message"
             ></textarea>
             <button
-              class="b-none bg-blue c-white fs-18 p-10 w-100 fw-bold d-block"
+              class="b-none bg-blue c-white fs-18 p-10 w-100 rad-6 fw-bold d-block"
             >
               Send
             </button>
