@@ -1263,7 +1263,8 @@ footer .copyright {
   object-fit: cover;
 }
 @media (max-width: 767px) {
-  .form-page-signin .close1 {
+  .form-page-signup .close ,
+  .form-page-signin .close {
     z-index: 2;
   }
   .form-page-signup .content ,
