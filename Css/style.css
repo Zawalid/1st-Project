@@ -670,8 +670,12 @@ header .form a {
 }
 .our-app .content {
   flex: 1;
-  padding-left: 150px;
 }
+@media (min-width: 991px) {
+ .our-app. content {
+    padding-left : 150px;
+ } 
+} 
 .our-app .content .title :first-child {
   font-size: 70px;
   margin: 0;
