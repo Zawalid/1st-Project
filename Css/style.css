@@ -389,16 +389,6 @@ header .form a {
 .categories .container {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
-@media (min-width: 991px) {
-  .categories .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .categories .container .category {
-    width: 200px;
-  }
-}
 .categories .container .category {
   background-color: var(--section-background);
   flex-direction: column;
@@ -628,11 +618,9 @@ header .form a {
 /* Start Our App */
 .our-app {
   padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
 }
 @media (max-width: 767px) {
-  .our-app {
-    padding-bottom: var(--main-padding-bottom);
-  }
   .our-app .container {
     flex-direction: column-reverse;
   }
