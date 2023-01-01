@@ -670,6 +670,7 @@ header .form a {
 }
 .our-app .content {
   flex: 1;
+  padding-left: 150px;
 }
 .our-app .content .title :first-child {
   font-size: 70px;
@@ -680,6 +681,9 @@ header .form a {
   font-size: 40px;
   margin: 10px 0 0;
   margin-bottom: 30px;
+}
+.our-app .content .description {
+  width: 80%;
 }
 .our-app .content .platforms {
   margin-top: 50px;
