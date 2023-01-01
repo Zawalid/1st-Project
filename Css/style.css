@@ -593,6 +593,13 @@ header .form a {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 40px;
 }
+@media (min-width: 1200px) {
+  .testimonials .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 .testimonials .container .testimony {
   box-shadow: 0 0 5px #0000005e;
 }
