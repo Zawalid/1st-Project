@@ -1,12 +1,10 @@
 :root {
   --blue-color: #0075ff;
-  --green-alt-color: #d8d435;
-  --orange-color: #f0b70d;
-  --green-color: #f44336;
+  --main-alt-color: #d8d435;
+  --main-color: #f44336;
   --red-color: #f44336;
   --grey-color: #888;
   --paragraph-color: #777;
-  --main-transition: 0.3s;
 }
 /* Start Box */
 .d-flex {
@@ -142,11 +140,11 @@
 .c-red {
   color: var(--red-color);
 }
-.c-green {
-  color: var(--green-color);
+.c-main {
+  color: var(--main-color);
 }
-.c-green-alt {
-  color: var(--green-alt-color);
+.c-main-alt {
+  color: var(--main-alt-color);
 }
 .c-paragraph {
   color: #777;
@@ -154,17 +152,14 @@
 .c-blue {
   color: var(--blue-color);
 }
-.c-orange {
-  color: var(--orange-color);
-}
 .bg-red {
   background-color: var(--red-color);
 }
 .bg-green {
-  background-color: var(--green-color);
+  background-color: var(--main-color);
 }
 .bg-green-alt {
-  background-color: var(--green-alt-color);
+  background-color: var(--main-alt-color);
 }
 .bg-blue {
   background-color: var(--blue-color);

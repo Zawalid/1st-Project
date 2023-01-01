@@ -1,11 +1,6 @@
 :root {
-  --blue-color: #0075ff;
-  --green-alt-color: #d8d435;
-  --orange-color: #f0b70d;
-  --green-color: #f44336;
-  --red-color: #f44336;
-  --grey-color: #888;
-  --paragraph-color: #777;
+  --main-color: #f44336;
+  --main-alt-color: #d8d435;
   --main-transition: 0.3s;
   --main-padding-top: 100px;
   --main-padding-bottom: 100px;
@@ -65,6 +60,11 @@ ul {
     width: 1170px;
   }
 }
+@media (min-width: 1400px) {
+  .container {
+    width:1320px;
+  }
+}
 .main-title {
   text-transform: uppercase;
   font-size: 25px;
@@ -81,7 +81,7 @@ ul {
   content: "";
   width: 12px;
   height: 12px;
-  background-color: var(--green-color);
+  background-color: var(--main-color);
   position: absolute;
   border-radius: 50%;
   top: 50%;
@@ -239,7 +239,7 @@ header nav ul li a::before {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--green-color);
+  background-color: var(--main-color);
   height: 1px;
   width: 0;
   bottom: -10px;
@@ -259,7 +259,7 @@ header .form a {
   header nav ul li a:hover,
   header nav ul li a:hover::before {
     width: 100%;
-    color: var(--green-alt-color);
+    color: var(--main-alt-color);
   }
 }
 /* End Header */
@@ -293,7 +293,7 @@ header .form a {
   right: 20%;
   height: 100%;
   width: 50px;
-  background-color: var(--green-color);
+  background-color: var(--main-color);
   color: white;
   display: flex;
   justify-content: center;
@@ -311,11 +311,11 @@ header .form a {
   -o-transition: var(--main-transition);
 }
 .landing .container .content .search:hover ::before {
-  background-color: var(--green-alt-color);
+  background-color: var(--main-alt-color);
 }
 .landing .container .content .search input {
   width: 80%;
-  caret-color: var(--green-color);
+  caret-color: var(--main-color);
 }
 .landing .container .content .search input::placeholder {
   transition: var(--main-transition);
@@ -439,8 +439,8 @@ header .form a {
   width: 100%;
   border-width: 8px;
   border-style: solid;
-  border-color: var(--green-alt-color) transparent transparent
-    var(--green-alt-color);
+  border-color: var(--main-alt-color) transparent transparent
+    var(--main-alt-color);
   transform: rotate(-45deg);
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -847,7 +847,7 @@ footer .copyright {
 .page .sidebar ul li a:hover {
   border-right: 1px solid black;
   border-left: 1px solid black;
-  color: var(--green-color);
+  color: red;
 }
 .page .content {
   flex: 1;
@@ -865,7 +865,7 @@ footer .copyright {
   top: 50%;
   transform: translateY(-50%);
   font-size: 14px;
-  color: var(--grey-color);
+  color: grey;
 }
 .content .head .search input {
   border: 1px solid #ccc;
@@ -1068,7 +1068,7 @@ footer .copyright {
   0% {
     width: 0;
     height: 0;
-    border-top-color: var(--green-alt-color);
+    border-top-color: var(--main-alt-color);
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-left-color: transparent;
@@ -1077,8 +1077,8 @@ footer .copyright {
   50% {
     width: 100%;
     height: 0;
-    border-top-color: var(--green-alt-color);
-    border-right-color: var(--green-alt-color);
+    border-top-color: var(--main-alt-color);
+    border-right-color: var(--main-alt-color);
     border-bottom-color: transparent;
     border-left-color: transparent;
   }
@@ -1086,8 +1086,8 @@ footer .copyright {
   100% {
     width: 100%;
     height: 100%;
-    border-top-color: var(--green-alt-color);
-    border-right-color: var(--green-alt-color);
+    border-top-color: var(--main-alt-color);
+    border-right-color: var(--main-alt-color);
     border-bottom-color: transparent;
     border-left-color: transparent;
   }
@@ -1099,7 +1099,7 @@ footer .copyright {
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
-    border-left-color: var(--green-alt-color);
+    border-left-color: var(--main-alt-color);
   }
 
   50% {
@@ -1107,8 +1107,8 @@ footer .copyright {
     height: 100%;
     border-top-color: transparent;
     border-right-color: transparent;
-    border-bottom-color: var(--green-alt-color);
-    border-left-color: var(--green-alt-color);
+    border-bottom-color: var(--main-alt-color);
+    border-left-color: var(--main-alt-color);
   }
 
   100% {
@@ -1116,8 +1116,8 @@ footer .copyright {
     height: 100%;
     border-top-color: transparent;
     border-right-color: transparent;
-    border-bottom-color: var(--green-alt-color);
-    border-left-color: var(--green-alt-color);
+    border-bottom-color: var(--main-alt-color);
+    border-left-color: var(--main-alt-color);
   }
 }
 /* End Animations */
