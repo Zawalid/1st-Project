@@ -123,12 +123,11 @@ header .container {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   header .container {
-    flex-direction: column;
-    padding-top: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
   }
-  header .container nav,
-  header .container .logo {
-    margin-bottom: 15px;
+  header .form {
+    margin: 10px auto 0;
   }
 }
 .logo img {
@@ -705,6 +704,9 @@ header .form a {
     height: 85%;
     transform: rotate(101deg);
   }
+  .our-app .content .description {
+    width: 100%;
+  }
 }
 .our-app .image img {
   max-width: 100%;
@@ -737,6 +739,9 @@ header .form a {
 @media (max-width: 768px) {
   .our-app .content .platforms {
     justify-content: space-between;
+  }
+  .our-app .content .description {
+    width: 100%;
   }
 }
 .our-app .content .platforms > div {
@@ -1316,12 +1321,11 @@ footer .copyright {
 .form-page-signup .content .image img,
 .form-page-signin .content .image img {
   max-width: 100%;
-  width: 800px;
   height: 100%;
   aspect-ratio: 3/2;
   object-fit: cover;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .form-page-signup .close,
   .form-page-signin .close {
     z-index: 2;
