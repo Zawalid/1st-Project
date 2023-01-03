@@ -1,10 +1,10 @@
 :root {
-  --main-color: #f44336;
-  --main-alt-color: #d8d435;
+  --main-color: darkgreen;
+  --main-alt-color: orange;
   --main-transition: 0.3s;
   --main-padding-top: 100px;
   --main-padding-bottom: 100px;
-  --section-background: #dceaeb;
+  --section-background: #09ff0011;
 }
 * {
   box-sizing: border-box;
@@ -127,27 +127,8 @@ header .container {
     margin-bottom: 15px;
   }
 }
-.logo::before {
-  content: "";
-  position: absolute;
-  width: calc(100% - 30px);
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 2px;
-  background-color: black;
-}
-.logo::after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background-color: black;
-  border-radius: 50%;
-  border: 2px solid var(--section-background);
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -22px;
+.logo img{
+  width: 130px;
 }
 header nav .toggle-menu {
   font-size: 28px;
@@ -443,7 +424,9 @@ header .form a {
 }
 @media (min-width: 1400px) {
   .features .container {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .features .container .feature {
@@ -521,7 +504,13 @@ header .form a {
 }
 @media (min-width: 1400px) {
   .how-it-works .container {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .how-it-works .work-step {
+    width: 400px;
+    height: 350px;
   }
 }
 .how-it-works .container img {
@@ -672,10 +661,10 @@ header .form a {
   flex: 1;
 }
 @media (min-width: 991px) {
- .our-app .content {
-    padding-left : 150px;
- } 
-} 
+  .our-app .content {
+    padding-left: 150px;
+  }
+}
 .our-app .content .title :first-child {
   font-size: 70px;
   margin: 0;
