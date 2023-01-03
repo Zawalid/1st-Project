@@ -277,9 +277,9 @@ header .form a {
 }
 @media (max-width: 767px) {
   .landing::before {
-    left: -600px;
+    left: -450px;
     width: 140%;
-    transform: rotate(33deg);
+    transform: rotate(30deg);
     box-shadow: 0 0 10px #000000b8;
   }
 }
