@@ -850,6 +850,10 @@ footer h3 {
   font-size: 35px;
   margin: 0;
 }
+footer .owner {
+  font-family: "Great Vibes", cursive;
+  font-size: 22px;
+}
 footer .social li {
   margin-right: 10px;
 }
