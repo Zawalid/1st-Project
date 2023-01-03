@@ -1,10 +1,17 @@
 // ! ========================== Navbar Toggling ===========================
 var toggleButtonNav = document.querySelector("header nav .toggle-menu");
 var navBar = document.querySelector("header nav ul ");
-
+var links = document.querySelectorAll("header nav ul a");
 toggleButtonNav.addEventListener("click", function () {
+  navBar.style.position = "fixed";
+  navBar.style.visibility = "visible";
   navBar.classList.toggle("visible");
 });
+for (let i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function () {
+    navBar.classList.remove("visible");
+  });
+}
 // ! ========================== Form Toggling ===========================
 // ? ==== Sign In ====
 var signinBtns = document.querySelectorAll("#signinBtn");
@@ -32,20 +39,16 @@ var cls = document.getElementById("clsignup");
 cls.onclick = function () {
   signup.classList.remove("open");
 };
-var swapsin = document.getElementById("swapsin")
+var swapsin = document.getElementById("swapsin");
 swapsin.onclick = function () {
-  signin.classList.remove("open")
-  signup.classList.add("open")
-}
-var swapsup = document.getElementById("swapsup")
+  signin.classList.remove("open");
+  signup.classList.add("open");
+};
+var swapsup = document.getElementById("swapsup");
 swapsup.onclick = function () {
-  signup.classList.remove("open")
-  signin.classList.add("open")
-}
-
-
-
-
+  signup.classList.remove("open");
+  signin.classList.add("open");
+};
 
 
 
