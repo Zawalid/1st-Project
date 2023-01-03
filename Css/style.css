@@ -414,6 +414,7 @@ header .form a {
   }
   .categories .container .category {
     width: 180px;
+    height: 170px;
   }
 }
 .categories .container .category {
@@ -865,10 +866,10 @@ footer .social li a {
   align-items: center;
   border-radius: 50%;
   transition: var(--main-transition);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 footer .social a.facebook:hover {
   background-color: #1877f2;
