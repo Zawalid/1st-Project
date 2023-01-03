@@ -297,11 +297,6 @@ header .form a {
   letter-spacing: 1.6px;
   color: darkgreen;
 }
-
-.landing .container .content p {
-  line-height: 1.6;
-  font-size: 18px;
-}
 .landing .container .content .search::before {
   font-family: var(--fa-style-family-classic);
   content: "\f002";
@@ -437,9 +432,6 @@ header .form a {
 }
 .categories .container .category:hover div {
   bottom: 0;
-}
-.categories .container .category > div a {
-  font-size: 18px;
 }
 /* End Categories */
 /* ===================================== */
@@ -980,9 +972,6 @@ footer .copyright {
 .content .head .icons img {
   width: 50px;
   cursor: pointer;
-}
-.content .head .icons i {
-  font-size: 18px;
 }
 .content .head .icons .profile {
   width: 30px;

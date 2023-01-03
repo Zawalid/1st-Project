@@ -1,7 +1,7 @@
 :root {
   --blue-color: #0075ff;
-  --main-alt-color: #d8d435;
-  --main-color: #f44336;
+  --main-color: darkgreen;
+  --main-alt-color: orange;
   --red-color: #f44336;
   --grey-color: #888;
   --paragraph-color: #777;
@@ -9,9 +9,6 @@
 /* Start Box */
 .d-flex {
   display: flex;
-}
-.f-wrap {
-  flex-wrap: wrap;
 }
 .align-center {
   align-items: center;
@@ -75,9 +72,6 @@
 .pb-20 {
   padding-bottom: 20px;
 }
-.pl-20 {
-  padding-left: 20px;
-}
 .m-0 {
   margin: 0;
 }
@@ -104,9 +98,6 @@
 }
 .mt-25 {
   margin-top: 25px;
-}
-.mr-10 {
-  margin-right: 10px;
 }
 .mr-15 {
   margin-right: 15px;
@@ -161,12 +152,7 @@
 .bg-green-alt {
   background-color: var(--main-alt-color);
 }
-.bg-blue {
-  background-color: var(--blue-color);
-}
-.bg-orange {
-  background-color: var(--orange-color);
-}
+
 .bg-white {
   background-color: white;
 }
@@ -198,9 +184,6 @@
 .fs-18 {
   font-size: 18px;
 }
-.fs-25 {
-  font-size: 25px;
-}
 .fw-bold {
   font-weight: bold;
 }
@@ -228,9 +211,6 @@
 }
 .border-ccc {
   border: 1px solid #ccc;
-}
-.border-eee {
-  border: 1px solid #eee;
 }
 .border-b-ccc {
   border-bottom: 1px solid #ccc;
