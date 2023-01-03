@@ -25,7 +25,7 @@ body {
   background-color: white;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--section-background);
+  background-color: #eee;
   border-radius: 10px;
 }
 a {
@@ -259,7 +259,6 @@ header .form a {
 .landing {
   min-height: calc(100vh - 80px);
   padding-bottom: 60px;
-  /* background-color: var(--section-background); */
   background-color: white;
   box-shadow: 0 0 10px #ddd;
   position: relative;
@@ -445,7 +444,6 @@ header .form a {
 /* ===================================== */
 /* :Start Features */
 .features {
-  background-color: var(--section-background);
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padding-bottom);
   overflow: hidden;
@@ -611,7 +609,6 @@ header .form a {
 .testimonials {
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padding-bottom);
-  background-color: var(--section-background);
   box-shadow: 0 0 10px #ddd;
   position: relative;
 }
@@ -896,7 +893,7 @@ footer .copyright {
   height: 100vh;
   position: sticky;
   top: 0;
-  background-color: var(--section-background);
+  background-color: lightgreen;
 }
 .hide-sidebar {
   right: 5px;
@@ -990,7 +987,6 @@ footer .copyright {
   width: 30px;
   height: 30px;
   padding-top: 4px;
-  background-color: var(--section-background);
 }
 .content .head .icons .notification::before {
   content: "";
@@ -1026,7 +1022,6 @@ footer .copyright {
   -o-transition: var(--main-transition);
 }
 .content .category .arrows span:hover {
-  background-color: var(--section-background);
   color: black;
 }
 .content .category .arrows span i {
