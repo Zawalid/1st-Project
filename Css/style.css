@@ -950,6 +950,15 @@ footer .copyright {
 .content .head {
   box-shadow: 0 0 8px #ddd;
 }
+@media (max-width: 767px) {
+  .page .content {
+    margin-top: 70px;
+  }
+  .content .head {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 .content .head .search::before {
   font-family: var(--fa-style-family-classic);
   content: "\f002";
