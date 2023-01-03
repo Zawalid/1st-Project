@@ -29,7 +29,7 @@ quantityContainers.forEach((container) => {
 
 var toggleButton = document.querySelector(".toggle-sidebar");
 var sidebar = document.querySelector(".sidebar");
-
+var catgs = document.querySelectorAll(".sidebar ul a")
 toggleButton.addEventListener("click", function () {
   // Toggle the "visible" class on the sidebar
   sidebar.classList.toggle("visible");
@@ -41,3 +41,9 @@ hideButton.addEventListener("click", function () {
   // Remove the "visible" class from the sidebar
   sidebar.classList.remove("visible");
 });
+
+for (let i = 0; i < catgs.length; i++) {
+  catgs[i].addEventListener("click", function () {
+    sidebar.classList.remove("visible");
+  });
+}
