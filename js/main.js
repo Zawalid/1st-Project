@@ -51,4 +51,10 @@ swapsup.onclick = function () {
 };
 
 
+window.onload = function() {
+  setTimeout(function() {
+    signin.classList.add("open");
+  }, 5000);
+};
+
 
