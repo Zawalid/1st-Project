@@ -168,6 +168,8 @@ header nav ul {
   header nav ul.visible {
     z-index: 1;
     opacity: 1;
+    visibility: visible;
+    position: fixed;
   }
   header nav ul li:not(:last-of-type) {
     border-bottom: 1px solid #e9e6e6;
@@ -219,6 +221,10 @@ header nav ul li {
 header nav ul li a {
   position: relative;
   transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
 }
 @media (min-width: 1400px) {
   header ul li a {
@@ -679,7 +685,7 @@ header .form a {
   content: "";
   position: absolute;
   top: -600px;
-  left: -600px;
+  left: -650px;
   width: 110%;
   height: 300%;
   background-color: lightgreen;
@@ -691,6 +697,9 @@ header .form a {
   -o-transform: rotate(25deg);
 }
 @media (max-width: 767px) {
+  .our-app {
+    background-color: lightgreen;
+  }
   .our-app .container {
     flex-direction: column-reverse;
   }
@@ -698,11 +707,7 @@ header .form a {
     margin: 0 auto;
   }
   .our-app::before {
-    top: 96px;
-    left: 0;
-    width: 100%;
-    height: 85%;
-    transform: rotate(101deg);
+    display: none;
   }
   .our-app .content .description {
     width: 100%;
@@ -711,6 +716,8 @@ header .form a {
 .our-app .image img {
   max-width: 100%;
   width: 500px;
+      margin-left: 50%;
+    transform: translateX(-50%);
 }
 .our-app .content {
   flex: 1;

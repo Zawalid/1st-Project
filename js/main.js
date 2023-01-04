@@ -3,8 +3,6 @@ var toggleButtonNav = document.querySelector("header nav .toggle-menu");
 var navBar = document.querySelector("header nav ul ");
 var links = document.querySelectorAll("header nav ul a");
 toggleButtonNav.addEventListener("click", function () {
-  navBar.style.position = "fixed";
-  navBar.style.visibility = "visible";
   navBar.classList.toggle("visible");
 });
 for (let i = 0; i < links.length; i++) {
