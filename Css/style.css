@@ -498,6 +498,7 @@ header .form a {
 }
 .features .container .feature .icon {
   top: -55px;
+  box-shadow: 0 0 10px #ddd;
 }
 .features .container .feature .icon img {
   width: 80px;
@@ -512,8 +513,12 @@ header .form a {
   background-color: white;
   font-weight: bold;
   letter-spacing: 1.2px;
-  position: relative;
+  position: absolute;
+  top: 50px;
   box-shadow: 0 0 10px #ddd;
+}
+.features .container .feature p {
+  margin-top: 80px;
 }
 .features .container .feature .circle {
   width: 50px;
@@ -856,10 +861,6 @@ footer h3 {
   color: white;
   font-size: 35px;
   margin: 0;
-}
-footer .owner {
-  font-family: "Great Vibes", cursive;
-  font-size: 22px;
 }
 footer .social li {
   margin-right: 10px;
