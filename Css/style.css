@@ -113,7 +113,6 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
-  /* background-color: var(--section-background); */
   background-color: white;
   box-shadow: 0 0 10px #ddd;
   z-index: 100;
@@ -150,20 +149,18 @@ header nav ul {
     opacity: 0;
     visibility: hidden;
     z-index: -1;
-    transition: top var(--main-transition), opacity var(--main-transition);
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: white;
     padding-top: 20px;
     height: 100%;
-    /* top: 100px; */
     left: 0;
-    -webkit-transition: top var(--main-transition),
-      opacity var(--main-transition);
-    -moz-transition: top var(--main-transition), opacity var(--main-transition);
-    -ms-transition: top var(--main-transition), opacity var(--main-transition);
-    -o-transition: top var(--main-transition), opacity var(--main-transition);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
   }
   header nav ul.visible {
     z-index: 1;
@@ -184,11 +181,11 @@ header nav ul {
     background-color: #eeeeee;
     z-index: -1;
     transition: 1s;
-    -webkit-transition: 0.5s;
+    -webkit-transition: 1s;
     -moz-transition: 1s;
     -ms-transition: 1s;
     -o-transition: 1s;
-  }
+}
   header ul li a {
     display: block;
     padding: 20px;
@@ -474,8 +471,7 @@ header .form a {
   width: 100%;
   border-width: 8px;
   border-style: solid;
-  border-color: var(--main-alt-color) transparent transparent
-    var(--main-alt-color);
+  border-color: var(--main-alt-color) transparent transparent    var(--main-alt-color);
   transform: rotate(-45deg);
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -483,11 +479,11 @@ header .form a {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   transition: 1s;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
   box-shadow: 0 0 10px #00000047;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
 }
 .features .container .feature:hover::before {
   transform: rotate(135deg);
@@ -721,8 +717,8 @@ header .form a {
 .our-app .image img {
   max-width: 100%;
   width: 500px;
-      margin-left: 50%;
-    transform: translateX(-50%);
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 .our-app .content {
   flex: 1;
@@ -876,10 +872,6 @@ footer .social li a {
   align-items: center;
   border-radius: 50%;
   transition: var(--main-transition);
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
 }
 footer .social a.facebook:hover {
   background-color: #1877f2;
